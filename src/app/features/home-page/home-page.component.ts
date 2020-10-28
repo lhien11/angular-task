@@ -10,10 +10,19 @@ export class HomePageComponent {
 
     constructor (private route: Router) {}
 
+    public goToAllProfile (): void {
+
+        this.route.navigate(['/profiles']);
+
+    }
+
     public goToProfile (): void {
 
         this.route.navigate(['/profile']);
 
     }
+
+
+
 
 }
